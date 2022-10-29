@@ -35,7 +35,7 @@ export default [
     },
 
     {
-        id: 5,
+        id: 6,
         tittle: "Sunglass",
         price: "894",
         rating: "4.2/5"
