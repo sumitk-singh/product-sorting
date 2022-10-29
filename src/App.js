@@ -1,10 +1,16 @@
 import "./styles.css";
 
+import { useState } from "react";
+import data from './data'
+import List from './List'
+
 export default function App() {
+
+  const [product, setProduct] = useState(data)
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <List people={product} />
+      <button onClick={() => setProduct([])}>clear all</button>
     </div>
   );
 }
